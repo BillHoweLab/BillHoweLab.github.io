@@ -1,5 +1,7 @@
 body {
   --sidebarwidth: 200px;
+  --deepred: #b90103;
+  --gold: #FFBF17;
 
   display: grid;
   height: 100vh;
@@ -28,13 +30,72 @@ a > span {
   grid-row-start: mainstuff;
   grid-column-start: sidebar;
 
-  color: #ddd;
-  font-size: 0.8em;
+  color: darkslategray;
+  font-size: 1em;
   cursor: default;
 }
 
+#slogan:hover {
+  color: darkslategray;
+}
+
+.tab {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+#page-about:hover {
+  color: var(--deepred);
+}
+
+#page-people:hover {
+  color: var(--gold)
+}
+
+#page-papers:hover {
+  color: steelblue;
+}
+
 #photo-container:hover {
-  color: #bbb
+  color: #bbb;
+  cursor: pointer;
+}
+
+/*
+text animation technique #2 from
+https://css-tricks.com/4-ways-to-animate-the-color-of-a-text-link-on-hover/
+ */
+/* .animated-text {
+  position: relative;
+  display: block;
+  /* text-decoration: underline; */
+} */
+
+.animated-text::before {
+  position: absolute;
+  content: attr(data-content);
+  color: midnightblue;
+  /* text-decoration: underline; */
+  clip-path: polygon(0 0, 0 0, 0% 100%, 0 100%);
+  transition: clip-path 275ms ease;
+
+  /* color: royalblue;
+  position: absolute;
+  content: attr(data-content);
+  top: 0;
+  left: 0;
+  width: 0;
+  /* text-decoration: underline; */
+  /* white-space: nowrap;
+  overflow: hidden;
+  transition: width 275ms ease;  */
+}
+
+.animated-text:hover::before {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  /* width: 100%; */
 }
 
 #photo-container #photo {
@@ -89,12 +150,12 @@ a > span {
 }
 
 .honorable-mention{
-  color: #b90103;
+  color: var(--deepred);
   font-weight: bold;
 }
 
 .best-paper {
-  color: #FFBF17;
+  color: var(--gold);
   font-weight: bold;
 }
 
