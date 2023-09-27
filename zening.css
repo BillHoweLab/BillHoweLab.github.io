@@ -5,7 +5,7 @@ body {
   height: 100vh;
   margin: 0;
   grid-template-rows: [header] 50px [mainstuff] auto [paperlist] auto;
-  grid-template-columns: 3% [sidebar] var(--sidebarwidth) [mainstuff] auto 3%;
+  grid-template-columns: 3% [sidebar] var(--sidebarwidth) [mainstuff] auto [right-panel] 15% [margin-right] 3%;
   column-gap: 50px;
   justify-items: center;
   align-items: start;
@@ -49,6 +49,7 @@ a > span {
 #self-intro {
   grid-row-start: mainstuff;
   grid-column-start: mainstuff;
+  grid-column-end: margin-right;
   justify-self: stretch;
 }
 
@@ -62,6 +63,13 @@ a > span {
 #paper-list {
   grid-row-start: paperlist;
   grid-column-start: mainstuff;
+  grid-column-end: right-panel;
+  justify-self: left;
+}
+
+#lab-news {
+  grid-row-start: paperlist;
+  grid-column-start: right-panel;
   justify-self: left;
 }
 
