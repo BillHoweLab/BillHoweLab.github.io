@@ -1,8 +1,10 @@
 'use strict';
 
+// define your own venue constants
 const INFOVIS_17 = `IEEE Transactions on Visualization and Computer Graphics (Proc. InfoVis'17)`;
 const CHI_17 = `ACM Human Factors in Computing Systems (CHI'17)`;
 
+// define your own author constants
 const ZENING = 'Zening Qu';
 const FANDU = 'Fan Du';
 const RYAN_ROSSI = 'Ryan A. Rossi';
@@ -25,6 +27,7 @@ const TIANZHOU_CHEN = 'Tianzhou Chen';
 const BAOZHONG_YU = 'Baozhong Yu';
 const JIANLIANG_MA = 'Jianlang Ma';
 
+// define your own award constants
 const BEST_PAPER = 'BEST_PAPER';
 const HONORABLE_MENTION = 'HONORABLE_MENTION';
 
@@ -52,7 +55,7 @@ function Paper(props) {
       {props.awardType === HONORABLE_MENTION &&
         <div className="honorable-mention">
           <i className="fas fa-award"></i>
-          <span>{props.award}</span>
+          <span>{' Best Paper Honorable Mention'}</span>
         </div>
       }
 
@@ -83,7 +86,6 @@ function PaperList() {
         date = 'Jan 2018'
         pdf = 'paper/2018-Consistency-InfoVis.pdf'
         acceptanceRate = {23}
-        award = {' Best Paper Honorable Mention'}
         awardType = {HONORABLE_MENTION}
         video = {`https://vimeo.com/238853591?ref=tw-share`}
         slides = {`https://github.com/ZeningQu/InfoVis17-Consistency-Slides`}
