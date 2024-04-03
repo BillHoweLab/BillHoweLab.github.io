@@ -2,10 +2,14 @@
 
 // define your own author constants
 const BILL_HOWE = 'Bill Howe';
+const NIC = 'Nic Weber';
+const BERNEASE = 'Bernease Herman';
 const BINGBING = 'Bingbing Wen';
 const BIN = 'Bin Han';
 const EVA = 'Eva Maxfield Brown'
 const ISAAC = 'Isaac Slaughter';
+const LUCAS = 'Lucas Rosenblatt';
+const ROBERT = 'Robert Wolfe';
 const YIWEI = 'Yiwei Yang';
 const ZENING = 'Zening Qu';
 
@@ -15,16 +19,15 @@ function Person(props) {
   return (
     <div className="person">
 
-      {/* add image */}
-      <img class="headshot" src={props.image} alt={props.name} />
-      <div className="person-name">{props.name}</div>
+      <a href={props.website}>
+        <img className="headshot" src={props.image} alt={props.name}/>
+      </a>
 
-      <div className="links">
-        {<a href={props.twitter}>Twitter</a>}
+      <a className="person-name" href={props.website}>{props.name}</a>
 
-        {<a href={props.github}>GitHub</a>}
-      </div>
+      <a href={props.twitter}><i class="fa-brands fa-x-twitter"></i></a>
 
+      <a href={props.github}><i class="fab fa-github-alt"></i></a>
     </div>
   );
 }
@@ -43,7 +46,15 @@ function PeopleList() {
         />
 
         <Person
-          name = {BILL_HOWE}
+          name = {NIC}
+          image = 'images/nic.jpg'
+          twitter = 'https://twitter.com/billghowe'
+          github = 'https://github.com/billhowe'
+          website = 'https://nicweber.info/'
+        />
+
+        <Person
+          name = {BERNEASE}
           image = 'images/billhowe.png'
           twitter = 'https://twitter.com/billghowe'
           github = 'https://github.com/billhowe'
