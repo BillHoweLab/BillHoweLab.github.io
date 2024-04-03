@@ -43,21 +43,39 @@ function PeopleList() {
           image = 'images/billhowe.png'
           twitter = 'https://twitter.com/billghowe'
           github = 'https://github.com/billhowe'
+          website = 'https://faculty.washington.edu/billhowe/'
         />
 
         <Person
           name = {NIC}
           image = 'images/nic.jpg'
-          twitter = 'https://twitter.com/billghowe'
-          github = 'https://github.com/billhowe'
+          twitter = 'https://twitter.com/nniiicc'
+          github = 'https://github.com/nniiicc'
           website = 'https://nicweber.info/'
         />
 
         <Person
           name = {BERNEASE}
-          image = 'images/billhowe.png'
+          image = 'images/bernease.png'
+          twitter = 'https://twitter.com/bernease'
+          github = 'https://github.com/bernease'
+          website = 'https://www.berneaseherman.com'
+        />
+
+        <Person
+          name = {BINGBING}
+          image = 'images/bingbing.png'
+          twitter = 'https://twitter.com/bbwen'
+          github = 'https://github.com/bbwen'
+          website = 'https://faculty.washington.edu/billhowe/'
+        />
+
+        <Person
+          name = {BIN}
+          image = 'images/bin.jpeg'
           twitter = 'https://twitter.com/billghowe'
-          github = 'https://github.com/billhowe'
+          github = 'https://github.com/BeanHam'
+          website = 'https://beanham.github.io/'
         />
 
         <Person
@@ -65,13 +83,39 @@ function PeopleList() {
           image = 'images/eva.jpeg'
           twitter = 'https://twitter.com/evamaxfieldb'
           github = 'https://github.com/evamaxfield'
+          website = 'https://faculty.washington.edu/billhowe/'
         />
 
         <Person
           name = {ISAAC}
           image = 'images/isaac.jpg'
           twitter = 'https://twitter.com/evamaxfieldb'
-          github = 'https://github.com/evamaxfield'
+          github = 'https://github.com/isaacOnline'
+          website = 'https://faculty.washington.edu/billhowe/'
+        />
+
+        <Person
+          name = {LUCAS}
+          image = 'images/lucas.jpeg'
+          twitter = 'https://twitter.com/billghowe'
+          github = 'https://github.com/lurosenb'
+          website = 'https://faculty.washington.edu/billhowe/'
+        />
+
+        <Person
+          name = {ROBERT}
+          image = 'images/robert.jpeg'
+          twitter = 'https://twitter.com/billghowe'
+          github = 'https://github.com/wolferobert3'
+          website = 'https://faculty.washington.edu/billhowe/'
+        />
+
+        <Person
+          name = {YIWEI}
+          image = 'images/yiwei.jpg'
+          twitter = 'https://twitter.com/billghowe'
+          github = 'https://github.com/yanyiwei'
+          website = 'https://yanyiwei.github.io/'
         />
 
         <Person
@@ -79,6 +123,7 @@ function PeopleList() {
           image = 'images/zeningqu.jpg'
           twitter = 'https://twitter.com/zeningqu'
           github = 'https://github.com/light-and-salt'
+          website = 'https://faculty.washington.edu/billhowe/'
         />
       </div>
 
