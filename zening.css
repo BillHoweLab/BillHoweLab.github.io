@@ -132,6 +132,11 @@ https://css-tricks.com/4-ways-to-animate-the-color-of-a-text-link-on-hover/
   font-weight: bold;
 }
 
+.people-list {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+}
+
 .people {
   margin-top: 30px;
   color: #bbb;
