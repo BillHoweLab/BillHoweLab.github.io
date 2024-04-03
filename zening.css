@@ -2,6 +2,7 @@ body {
   --sidebarwidth: 200px;
   --deepred: #b90103;
   --gold: #FFBF17;
+  --darkgreen: #3F612D;
 
   display: grid;
   height: 100vh;
@@ -35,10 +36,6 @@ a > span {
   cursor: default;
 }
 
-#slogan:hover {
-  color: darkslategray;
-}
-
 .tab {
   margin-top: 10px;
   margin-bottom: 10px;
@@ -51,16 +48,15 @@ a > span {
 }
 
 #page-people:hover {
-  color: var(--gold)
+  color: var(--gold);
 }
 
 #page-papers:hover {
-  color: steelblue;
+  color: var(--darkgreen);
 }
 
-#photo-container:hover {
-  color: #bbb;
-  cursor: pointer;
+#photo-container > a {
+  display: block;
 }
 
 /*
