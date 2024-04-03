@@ -76,7 +76,7 @@ function Paper(props) {
 function PaperList() {
   return (
     <div>
-      <div className="paper-category">Conference Papers</div>
+      <div className="subtitle">Conference Papers</div>
 
       <Paper
         title =
@@ -131,7 +131,7 @@ function PaperList() {
         pdf = 'paper/2013-CHD-HealthCom.pdf'
       />
 
-      <div className="paper-category">Workshop Papers</div>
+      <div className="subtitle">Workshop Papers</div>
 
       <Paper
         title = 'Aunt Lily Can Say Her Visualizations: Directing Analysis, Design, and Storytelling in Natural Language (A Vision)'
@@ -153,7 +153,7 @@ function PaperList() {
         slides = {`https://github.com/ZeningQu/BELIV16-Slides`}
       />
 
-      <div className="paper-category">Demo</div>
+      <div className="subtitle">Demo</div>
 
       <Paper
         title = 'Matryoshka: Design of NDN Multiplayer Online Game'

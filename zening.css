@@ -17,6 +17,12 @@ body {
   font-family: "Avenir Next"
 }
 
+.subtitle {
+  margin-top: 30px;
+  color: #bbb;
+  font-size: 1.2em;
+}
+
 a {
   margin-right: 10px;
   color: steelblue;
@@ -107,12 +113,6 @@ https://css-tricks.com/4-ways-to-animate-the-color-of-a-text-link-on-hover/
   justify-self: left;
 }
 
-.paper-category {
-  margin-top: 30px;
-  color: #bbb;
-  font-size: 1.2em;
-}
-
 .paper {
   margin-top: 10px;
   margin-bottom: 10px;
@@ -132,14 +132,13 @@ https://css-tricks.com/4-ways-to-animate-the-color-of-a-text-link-on-hover/
   font-weight: bold;
 }
 
-.me {
-  /* font-weight: bold; */
-}
-
 .people {
   margin-top: 30px;
   color: #bbb;
   font-size: 1.2em;
+  display: inline-grid;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .person {

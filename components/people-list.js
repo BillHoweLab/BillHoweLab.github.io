@@ -27,8 +27,8 @@ function Person(props) {
 
 function PeopleList() {
   return (
-    <div>
-      <div className="people">People</div>
+    <div className="people-list">
+      <div className="subtitle">People</div>
 
       <Person
         name = {ZENING}
