@@ -1,5 +1,6 @@
 body {
   --sidebarwidth: 200px;
+  --headshotsize: 200px;
   --deepred: #b90103;
   --gold: #FFBF17;
   --darkgreen: #3F612D;
@@ -68,12 +69,12 @@ a > span {
 /*
 text animation technique #2 from
 https://css-tricks.com/4-ways-to-animate-the-color-of-a-text-link-on-hover/
- */
+*/
 
 #photo-container #photo {
   width: var(--sidebarwidth);
   height: var(--sidebarwidth);
-  border-radius: 250px;
+  border-radius: 50%;
   background: url('images/logo.png') center;
   background-size: contain;
   margin: 5px;
@@ -105,6 +106,7 @@ https://css-tricks.com/4-ways-to-animate-the-color-of-a-text-link-on-hover/
   grid-column-start: mainstuff;
   grid-column-end: right-panel;
   justify-self: left;
+  width: 100%;
 }
 
 #lab-news {
@@ -133,17 +135,10 @@ https://css-tricks.com/4-ways-to-animate-the-color-of-a-text-link-on-hover/
 }
 
 .people-list {
+  width: 100%;
   display: grid;
-  grid-template-columns: repeat(9, 1fr);
-}
-
-.people {
-  margin-top: 30px;
-  color: #bbb;
-  font-size: 1.2em;
-  display: inline-grid;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(var(--headshotsize), 1fr));
+  grid-gap: 1.7rem;
 }
 
 .person {
@@ -151,8 +146,8 @@ https://css-tricks.com/4-ways-to-animate-the-color-of-a-text-link-on-hover/
 }
 
 .headshot {
-  width: 200px;
-  height: 200px;
+  width: var(--headshotsize);
+  height: var(--headshotsize);
   border-radius: 50%;
 }
 

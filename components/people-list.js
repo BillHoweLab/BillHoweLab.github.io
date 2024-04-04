@@ -64,19 +64,19 @@ function PeopleList() {
         />
 
         <Person
-          name = {BINGBING}
-          image = 'images/bingbing.png'
-          twitter = 'https://twitter.com/bingbingwen1'
-          github = 'https://github.com/bbwen'
-          website = 'https://bbwen.github.io/'
-        />
-
-        <Person
           name = {BIN}
           image = 'images/bin.jpeg'
           twitter = 'https://twitter.com/Volitional_AI'
           github = 'https://github.com/BeanHam'
           website = 'https://beanham.github.io/'
+        />
+
+        <Person
+          name = {BINGBING}
+          image = 'images/bingbing.png'
+          twitter = 'https://twitter.com/bingbingwen1'
+          github = 'https://github.com/bbwen'
+          website = 'https://bbwen.github.io/'
         />
 
         <Person
