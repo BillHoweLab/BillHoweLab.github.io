@@ -1,6 +1,6 @@
 body {
-  --sidebarwidth: 200px;
-  --headshotsize: 200px;
+  --sidebarwidth: 270px;
+  --headshotsize: 250px;
   --deepred: #b90103;
   --gold: #FFBF17;
   --darkgreen: #3F612D;
@@ -15,13 +15,14 @@ body {
   align-items: start;
 
   color: darkslategray;
-  font-family: "Avenir Next"
+  font-family: "Avenir Next";
+  font-size: 14pt;
 }
 
 .subtitle {
-  margin-top: 30px;
+  margin-top: 4rem;
   color: #bbb;
-  font-size: 1.2em;
+  font-size: 1.2rem;
 }
 
 a {
@@ -39,14 +40,14 @@ a > span {
   grid-column-start: sidebar;
 
   color: darkslategray;
-  font-size: 1em;
+  font-size: 1rem;
   cursor: default;
 }
 
 .tab {
   margin-top: 10px;
   margin-bottom: 10px;
-  font-size: 1.2em;
+  font-size: 1.2rem;
   font-weight: bold;
 }
 
@@ -89,7 +90,7 @@ https://css-tricks.com/4-ways-to-animate-the-color-of-a-text-link-on-hover/
 
 #name {
   justify-self: start;
-  font-size: 1.8em;
+  font-size: 1.8rem;
   font-family: 'Avenir';
   font-weight: bold;
 }
@@ -138,11 +139,11 @@ https://css-tricks.com/4-ways-to-animate-the-color-of-a-text-link-on-hover/
   width: 100%;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(var(--headshotsize), 1fr));
-  grid-gap: 1.7rem;
+  grid-gap: 1.6rem;
 }
 
 .person {
-  margin: 1.7rem;
+  margin: 1.6rem;
 }
 
 .headshot {
