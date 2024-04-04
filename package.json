@@ -5,8 +5,10 @@
   "repository": "https://github.com/ZeningQu/zeningqu.github.io",
   "author": "Zening Qu <quzening@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "start": "python3 -m http.server"
+  },
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^5.15.0",
     "babel-standalone": "^6.26.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"

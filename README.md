@@ -1,6 +1,12 @@
 # How To Run Our Lab Website Locally
 
 ```bash
+yarn start
+```
+
+or
+
+```bash
 python3 -m http.server
 ```
 
