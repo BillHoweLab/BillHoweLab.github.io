@@ -147,12 +147,15 @@ https://css-tricks.com/4-ways-to-animate-the-color-of-a-text-link-on-hover/
 }
 
 .person {
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin: 1.7rem;
 }
 
 .headshot {
   width: 200px;
   height: 200px;
   border-radius: 50%;
+}
+
+.contact {
+  text-align: center;
 }

@@ -23,11 +23,12 @@ function Person(props) {
         <img className="headshot" src={props.image} alt={props.name}/>
       </a>
 
-      <a className="person-name" href={props.website}>{props.name}</a>
+      <div className="contact">
+        <a className="person-name" href={props.website}>{props.name}</a>
+        <a href={props.twitter}><i class="fa-brands fa-x-twitter"></i></a>
+        <a href={props.github}><i class="fab fa-github-alt"></i></a>
+      </div>
 
-      <a href={props.twitter}><i class="fa-brands fa-x-twitter"></i></a>
-
-      <a href={props.github}><i class="fab fa-github-alt"></i></a>
     </div>
   );
 }
