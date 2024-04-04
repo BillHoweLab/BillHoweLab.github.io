@@ -25,8 +25,8 @@ function Person(props) {
 
       <div className="contact">
         <a className="person-name" href={props.website}>{props.name}</a>
-        <a href={props.twitter}><i class="fa-brands fa-x-twitter"></i></a>
-        <a href={props.github}><i class="fab fa-github-alt"></i></a>
+        {props.twitter && <a href={props.twitter}><i class="fa-brands fa-x-twitter"></i></a>}
+        {props.github && <a href={props.github}><i class="fab fa-github-alt"></i></a>}
       </div>
 
     </div>
@@ -66,15 +66,15 @@ function PeopleList() {
         <Person
           name = {BINGBING}
           image = 'images/bingbing.png'
-          twitter = 'https://twitter.com/bbwen'
+          twitter = 'https://twitter.com/bingbingwen1'
           github = 'https://github.com/bbwen'
-          website = 'https://faculty.washington.edu/billhowe/'
+          website = 'https://bbwen.github.io/'
         />
 
         <Person
           name = {BIN}
           image = 'images/bin.jpeg'
-          twitter = 'https://twitter.com/billghowe'
+          twitter = 'https://twitter.com/Volitional_AI'
           github = 'https://github.com/BeanHam'
           website = 'https://beanham.github.io/'
         />
@@ -84,37 +84,36 @@ function PeopleList() {
           image = 'images/eva.jpeg'
           twitter = 'https://twitter.com/evamaxfieldb'
           github = 'https://github.com/evamaxfield'
-          website = 'https://faculty.washington.edu/billhowe/'
+          website = 'https://evamaxfield.github.io/'
         />
 
         <Person
           name = {ISAAC}
           image = 'images/isaac.jpg'
-          twitter = 'https://twitter.com/evamaxfieldb'
           github = 'https://github.com/isaacOnline'
-          website = 'https://faculty.washington.edu/billhowe/'
+          website = 'https://www.slaughter.page/'
         />
 
         <Person
           name = {LUCAS}
           image = 'images/lucas.jpeg'
-          twitter = 'https://twitter.com/billghowe'
+          // twitter = 'https://twitter.com/billghowe'
           github = 'https://github.com/lurosenb'
-          website = 'https://faculty.washington.edu/billhowe/'
+          website = 'https://lucasrosenblatt.com/'
         />
 
         <Person
           name = {ROBERT}
           image = 'images/robert.jpeg'
-          twitter = 'https://twitter.com/billghowe'
+          twitter = 'https://twitter.com/wolferobert3'
           github = 'https://github.com/wolferobert3'
-          website = 'https://faculty.washington.edu/billhowe/'
+          website = 'https://wolferobert3.github.io/'
         />
 
         <Person
           name = {YIWEI}
           image = 'images/yiwei.jpg'
-          twitter = 'https://twitter.com/billghowe'
+          twitter = 'https://twitter.com/yanyiwei_44'
           github = 'https://github.com/yanyiwei'
           website = 'https://yanyiwei.github.io/'
         />
@@ -124,7 +123,7 @@ function PeopleList() {
           image = 'images/zeningqu.jpg'
           twitter = 'https://twitter.com/zeningqu'
           github = 'https://github.com/light-and-salt'
-          website = 'https://faculty.washington.edu/billhowe/'
+          website = 'https://light-and-salt.github.io/'
         />
       </div>
 
