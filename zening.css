@@ -35,7 +35,7 @@ a > span {
   margin-right: 4px;
 }
 
-#logo-container {
+#sidebar {
   position: fixed;
   top: 0;
   bottom: 0;
@@ -45,7 +45,7 @@ a > span {
   cursor: default;
 }
 
-#logo-container #logo {
+#sidebar #logo {
   width: var(--sidebarwidth);
   height: var(--sidebarwidth);
   border-radius: 10%;
@@ -54,7 +54,13 @@ a > span {
   margin: 5px;
 }
 
+#slogan {
+  white-space: nowrap;
+  margin-bottom: 3rem;;
+}
+
 .tab {
+  display: block;
   margin-top: 10px;
   margin-bottom: 10px;
   font-size: 1.2rem;
@@ -73,8 +79,10 @@ a > span {
   color: var(--darkgreen);
 }
 
-#logo-container > a {
-  display: block;
+#lab-social-media {
+  position: absolute;
+  bottom: 3rem;
+  font-size: 2rem;
 }
 
 /*
@@ -90,8 +98,8 @@ https://css-tricks.com/4-ways-to-animate-the-color-of-a-text-link-on-hover/
 }
 
 #Name {
-  justify-self: start;
-  font-size: 1.8rem;
+  white-space: nowrap;
+  font-size: 2.3rem;
   font-family: 'Avenir';
   font-weight: bold;
 }
