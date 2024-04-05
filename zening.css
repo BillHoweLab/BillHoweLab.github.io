@@ -35,13 +35,22 @@ a > span {
   margin-right: 4px;
 }
 
-#photo-container {
+#logo-container {
   grid-row-start: mainstuff;
   grid-column-start: sidebar;
 
   color: darkslategray;
   font-size: 1rem;
   cursor: default;
+}
+
+#logo-container #logo {
+  width: var(--sidebarwidth);
+  height: var(--sidebarwidth);
+  border-radius: 10%;
+  background: url('images/logo.webp') center;
+  background-size: contain;
+  margin: 5px;
 }
 
 .tab {
@@ -63,7 +72,7 @@ a > span {
   color: var(--darkgreen);
 }
 
-#photo-container > a {
+#logo-container > a {
   display: block;
 }
 
@@ -71,15 +80,6 @@ a > span {
 text animation technique #2 from
 https://css-tricks.com/4-ways-to-animate-the-color-of-a-text-link-on-hover/
 */
-
-#photo-container #photo {
-  width: var(--sidebarwidth);
-  height: var(--sidebarwidth);
-  border-radius: 50%;
-  background: url('images/logo.png') center;
-  background-size: contain;
-  margin: 5px;
-}
 
 #About {
   grid-row-start: mainstuff;
