@@ -40,8 +40,6 @@ a > span {
   left: 3rem;
   width: var(--sidebarwidth);
   min-width: 100px;
-  max-width: 400px;
-
   color: darkslategray;
   font-size: 1rem;
   cursor: default;
