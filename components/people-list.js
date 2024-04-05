@@ -131,5 +131,5 @@ function PeopleList() {
   );
 }
 
-const domContainer = document.querySelector('#people-list');
+const domContainer = document.querySelector('#People');
 ReactDOM.render(e(PeopleList), domContainer);
