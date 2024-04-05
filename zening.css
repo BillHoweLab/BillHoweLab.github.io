@@ -8,14 +8,13 @@ body {
   display: grid;
   height: 100vh;
   margin: 0;
-  grid-template-rows: [header] 50px [mainstart] auto [peoplelist] auto [paperlist] 10%;
+  grid-template-rows: [header] 50px [mainstart] auto [peoplelist] auto [paperlist] auto;
   grid-template-columns: 3rem [sidebar] var(--sidebarwidth) 3rem [mainstart] 5fr [mainend] 3rem [right-panel] 1fr [margin-right] 3rem;
   justify-items: center;
   align-items: start;
 
   color: darkslategray;
   font-family: "Avenir Next";
-  /* font-size: 12pt; */
 }
 
 .subtitle {
@@ -102,9 +101,10 @@ https://css-tricks.com/4-ways-to-animate-the-color-of-a-text-link-on-hover/
 
 #Name {
   white-space: nowrap;
-  font-size: 2.3rem;
+  font-size: 3rem;
   font-family: 'Avenir';
   font-weight: bold;
+  margin-bottom: 1rem;
 }
 
 #Papers {
