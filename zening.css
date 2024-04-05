@@ -8,7 +8,7 @@ body {
   display: grid;
   height: 100vh;
   margin: 0;
-  grid-template-rows: [header] 50px [mainstuff] auto [paperlist] auto;
+  grid-template-rows: [header] 50px [mainstuff] auto [peoplelist] auto [paperlist] auto;
   grid-template-columns: 3% [sidebar] var(--sidebarwidth) [mainstuff] auto [right-panel] 15% [margin-right] 3%;
   column-gap: 50px;
   justify-items: center;
@@ -36,9 +36,10 @@ a > span {
 }
 
 #logo-container {
-  grid-row-start: mainstuff;
-  grid-column-start: sidebar;
-
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 3rem;
   color: darkslategray;
   font-size: 1rem;
   cursor: default;
@@ -96,14 +97,14 @@ https://css-tricks.com/4-ways-to-animate-the-color-of-a-text-link-on-hover/
 }
 
 #Papers {
-  grid-row-start: peoplelist;
+  grid-row-start: paperlist;
   grid-column-start: mainstuff;
   grid-column-end: right-panel;
   justify-self: left;
 }
 
 #People {
-  grid-row-start: paperlist;
+  grid-row-start: peoplelist;
   grid-column-start: mainstuff;
   grid-column-end: right-panel;
   justify-self: left;
@@ -111,7 +112,7 @@ https://css-tricks.com/4-ways-to-animate-the-color-of-a-text-link-on-hover/
 }
 
 #News {
-  grid-row-start: paperlist;
+  grid-row-start: peoplelist;
   grid-column-start: right-panel;
   justify-self: left;
 }
