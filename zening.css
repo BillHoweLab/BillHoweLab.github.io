@@ -1,6 +1,6 @@
 body {
-  --sidebarwidth: 270px;
-  --headshotsize: 250px;
+  --sidebarwidth: 10%;
+  --headshotsize: 200px;
   --deepred: #b90103;
   --gold: #FFBF17;
   --darkgreen: #3F612D;
@@ -8,19 +8,17 @@ body {
   display: grid;
   height: 100vh;
   margin: 0;
-  grid-template-rows: [header] 50px [mainstuff] auto [paperlist] auto;
-  grid-template-columns: 3% [sidebar] var(--sidebarwidth) [mainstuff] auto [right-panel] 15% [margin-right] 3%;
-  column-gap: 50px;
+  grid-template-rows: [header] 50px [mainstart] auto [peoplelist] auto [paperlist] auto;
+  grid-template-columns: 3rem [sidebar] var(--sidebarwidth) 3rem [mainstart] 5fr [mainend] 3rem [right-panel] 1fr [margin-right] 3rem;
   justify-items: center;
   align-items: start;
 
   color: darkslategray;
   font-family: "Avenir Next";
-  font-size: 14pt;
 }
 
 .subtitle {
-  margin-top: 4rem;
+  margin-top: 3rem;
   color: #bbb;
   font-size: 1.2rem;
 }
@@ -35,16 +33,36 @@ a > span {
   margin-right: 4px;
 }
 
-#photo-container {
-  grid-row-start: mainstuff;
-  grid-column-start: sidebar;
+#sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 3rem;
+  width: var(--sidebarwidth);
+  min-width: 100px;
+  max-width: 400px;
 
   color: darkslategray;
   font-size: 1rem;
   cursor: default;
 }
 
+#logo {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  background: url('images/logo.webp') center;
+  background-size: contain;
+}
+
+#slogan {
+  color: rgb(56,7,97);
+  text-align: center;
+  font-size: 1.03rem;;
+  margin-bottom: 3rem;
+}
+
 .tab {
+  display: block;
   margin-top: 10px;
   margin-bottom: 10px;
   font-size: 1.2rem;
@@ -63,8 +81,10 @@ a > span {
   color: var(--darkgreen);
 }
 
-#photo-container > a {
-  display: block;
+#lab-social-media {
+  position: absolute;
+  bottom: 3rem;
+  font-size: 2rem;
 }
 
 /*
@@ -72,46 +92,38 @@ text animation technique #2 from
 https://css-tricks.com/4-ways-to-animate-the-color-of-a-text-link-on-hover/
 */
 
-#photo-container #photo {
-  width: var(--sidebarwidth);
-  height: var(--sidebarwidth);
-  border-radius: 50%;
-  background: url('images/logo.png') center;
-  background-size: contain;
-  margin: 5px;
-}
-
 #About {
-  grid-row-start: mainstuff;
-  grid-column-start: mainstuff;
+  grid-row-start: mainstart;
+  grid-column-start: mainstart;
   grid-column-end: margin-right;
   justify-self: stretch;
 }
 
 #Name {
-  justify-self: start;
-  font-size: 1.8rem;
+  white-space: nowrap;
+  font-size: 3rem;
   font-family: 'Avenir';
   font-weight: bold;
+  margin-bottom: 1rem;
 }
 
 #Papers {
-  grid-row-start: peoplelist;
-  grid-column-start: mainstuff;
+  grid-row-start: paperlist;
+  grid-column-start: mainstart;
   grid-column-end: right-panel;
   justify-self: left;
 }
 
 #People {
-  grid-row-start: paperlist;
-  grid-column-start: mainstuff;
-  grid-column-end: right-panel;
+  grid-row-start: peoplelist;
+  grid-column-start: mainstart;
+  grid-column-end: mainend;
   justify-self: left;
   width: 100%;
 }
 
 #News {
-  grid-row-start: paperlist;
+  grid-row-start: peoplelist;
   grid-column-start: right-panel;
   justify-self: left;
 }
@@ -140,10 +152,7 @@ https://css-tricks.com/4-ways-to-animate-the-color-of-a-text-link-on-hover/
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(var(--headshotsize), 1fr));
   grid-gap: 1.6rem;
-}
-
-.person {
-  margin: 1.6rem;
+  margin: 1.6rem 0;
 }
 
 .headshot {

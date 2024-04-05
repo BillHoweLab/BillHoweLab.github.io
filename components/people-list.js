@@ -25,8 +25,8 @@ function Person(props) {
 
       <div className="contact">
         <a className="person-name" href={props.website}>{props.name}</a>
-        {props.twitter && <a href={props.twitter}><i class="fa-brands fa-x-twitter"></i></a>}
-        {props.github && <a href={props.github}><i class="fab fa-github-alt"></i></a>}
+        {props.twitter && <a href={props.twitter}><i class="fa-brands fa-twitter"></i></a>}
+        {props.github && <a href={props.github}><i class="fa-brands fa-github"></i></a>}
       </div>
 
     </div>
