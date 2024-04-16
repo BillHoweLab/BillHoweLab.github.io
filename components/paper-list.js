@@ -76,6 +76,8 @@ function Paper(props) {
 function PaperList() {
   return (
     <div>
+      <div className="subtitle">arXiv</div>
+
       <div className="subtitle">Conference Papers</div>
 
       <Paper
@@ -130,6 +132,8 @@ function PaperList() {
         date = '2013'
         pdf = 'paper/2013-CHD-HealthCom.pdf'
       />
+
+      <div className="subtitle">Journal Articles</div>
 
       <div className="subtitle">Workshop Papers</div>
 
