@@ -163,7 +163,7 @@ function PaperList() {
         pdf = 'paper/2014-Matryoshka-ICN.pdf'
       />
 
-      <div className="paper-category">Tech Report</div>
+      <div className="subtitle">Tech Report</div>
       <Paper
         title = 'Egal Car: A Peer-to-Peer Car Racing Game Synchronized Over Named Data Networking'
         authors = {[ZENING, JEFF_BURKE]}
