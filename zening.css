@@ -126,6 +126,10 @@ https://css-tricks.com/4-ways-to-animate-the-color-of-a-text-link-on-hover/
   justify-self: left;
 }
 
+#News a {
+  margin: 0;
+}
+
 .paper {
   margin-top: 10px;
   margin-bottom: 10px;
