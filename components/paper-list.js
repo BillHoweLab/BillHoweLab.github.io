@@ -3,6 +3,7 @@
 // define your own venue constants
 const INFOVIS_17 = `IEEE Transactions on Visualization and Computer Graphics (Proc. InfoVis'17)`;
 const CHI_17 = `ACM Human Factors in Computing Systems (CHI'17)`;
+const FACCT_24 = `ACM Conference on Fairness, Accountability, and Transparency (FAccT'24)`;
 
 // define your own author constants
 const ZENING = 'Zening Qu';
@@ -26,6 +27,16 @@ const MAN_CAO = 'Man Cao';
 const TIANZHOU_CHEN = 'Tianzhou Chen';
 const BAOZHONG_YU = 'Baozhong Yu';
 const JIANLIANG_MA = 'Jianlang Ma';
+const ROBERT_WOLFE = 'Robert Wolfe';
+const ISAAC_SLAUGHTER = 'Isaac Slaughter';
+const BIN_HAN = 'Bin Han';
+const BINGBING_WEN = 'Bingbing Wen';
+const YIWEI_YANG = 'Yiwei Yang';
+const LUCAS_ROSENBLATT = 'Lucas Rosenblatt';
+const BERNEASE_HERMAN = 'Bernease Herman';
+const EVA_BROWN = 'Eva Brown';
+const NIC_WEBER = 'Nic Weber';
+
 
 // define your own award constants
 const BEST_PAPER = 'BEST_PAPER';
@@ -76,9 +87,18 @@ function Paper(props) {
 function PaperList() {
   return (
     <div>
-      <div className="subtitle">arXiv</div>
-
+      
       <div className="subtitle">Conference Papers</div>
+
+      <Paper
+        title =
+        'Laboratory-Scale AI: Open-Weight Models are Competitive with ChatGPT Even in Low-Resource Settings'
+        authors = {[ROBERT_WOLFE, ISAAC_SLAUGHTER, BIN_HAN, BINGBING_WEN, YIWEI_YANG, LUCAS_ROSENBLATT, BERNEASE_HERMAN, EVA_BROWN, ZENING, NIC_WEBER, BILL_HOWE]}
+        venue = {FACCT_24}
+        date = 'June 2024'
+        pdf = 'paper/2024-Lab-Scale-AI.pdf'
+        code = {`https://github.com/BillHoweLab/laboratory-scale-ai`}
+      />
 
       <Paper
         title =
@@ -176,7 +196,10 @@ function PaperList() {
         pdf = 'paper/2012-EgalCar-TR.pdf'
       />
 
+      <div className="subtitle">arXiv</div>
+
     </div>
+
   );
 }
 
