@@ -12,6 +12,7 @@ const LUCAS = 'Lucas Rosenblatt';
 const ROBERT = 'Robert Wolfe';
 const YIWEI = 'Yiwei Yang';
 const ZENING = 'Zening Qu';
+const LETIAN = 'Letian Shi';
 
 const e = React.createElement;
 
@@ -124,6 +125,14 @@ function PeopleList() {
           twitter = 'https://twitter.com/zeningqu'
           github = 'https://github.com/light-and-salt'
           website = 'https://light-and-salt.github.io/'
+        />
+		
+		<Person
+          name = {LETIAN}
+          image = 'images/LetianShi.jpg'
+          twitter = 'N/A'
+          github = 'https://github.com/sltslt'
+          website = 'https://www.linkedin.com/in/letian-shi-381a5719a/'
         />
       </div>
 
