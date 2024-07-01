@@ -147,8 +147,8 @@ function PeopleList() {
         <Person
           name={SOPHIE}
           image="images/sophieT.jpg"
-          twitter="N/A"
-          github="https://www.linkedin.com/in/sophie-tao"
+          twitter="https://www.linkedin.com/in/sophie-tao"
+          github="https://github.com/sophietao127"
           website="https://www.sophietao.net/"
         />
       </div>
