@@ -146,7 +146,7 @@ function PeopleList() {
 
         <Person
           name={SOPHIE}
-          image="images/sophieT.jpg"
+          image="images/sophietao.jpg"
           twitter="https://www.linkedin.com/in/sophie-tao"
           github="https://github.com/sophietao127"
           website="https://www.sophietao.net/"
