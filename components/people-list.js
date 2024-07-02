@@ -13,6 +13,8 @@ const ROBERT = 'Robert Wolfe';
 const YIWEI = 'Yiwei Yang';
 const ZENING = 'Zening Qu';
 const LETIAN = 'Letian Shi';
+const WEIFAN = 'Weifan Wu';
+
 
 const e = React.createElement;
 
@@ -133,6 +135,13 @@ function PeopleList() {
           twitter = 'N/A'
           github = 'https://github.com/sltslt'
           website = 'https://www.linkedin.com/in/letian-shi-381a5719a/'
+        />
+		<Person
+          name = {WEIFAN}
+          image = 'images/weifan-wu.webp'
+          twitter = 'N/A'
+          github = 'https://github.com/weifanwu'
+          website = 'https://www.linkedin.com/in/weifanwu/'
         />
       </div>
 
