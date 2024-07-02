@@ -13,6 +13,7 @@ const ROBERT = "Robert Wolfe";
 const YIWEI = "Yiwei Yang";
 const ZENING = "Zening Qu";
 const LETIAN = "Letian Shi";
+const WEIFAN = "Weifan Wu";
 const SOPHIE = "Sophie Tao";
 
 const e = React.createElement;
@@ -150,6 +151,13 @@ function PeopleList() {
           twitter="https://www.linkedin.com/in/sophie-tao"
           github="https://github.com/sophietao127"
           website="https://www.sophietao.net/"
+        />
+		<Person
+          name = {WEIFAN}
+          image = 'images/weifan-wu.webp'
+          twitter = 'N/A'
+          github = 'https://github.com/weifanwu'
+          website = 'https://www.linkedin.com/in/weifanwu/'
         />
       </div>
     </div>
