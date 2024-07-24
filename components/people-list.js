@@ -157,7 +157,7 @@ function PeopleList() {
           image = 'images/weifan-wu.webp'
           twitter = 'N/A'
           github = 'https://github.com/weifanwu'
-          website = 'https://www.linkedin.com/in/weifanwu/'
+          website = 'https://weifanwu.github.io/weifan-portfolio/'
         />
       </div>
     </div>
